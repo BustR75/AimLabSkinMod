@@ -6,7 +6,7 @@
 ## How to Install
  Install [MelonLoader 3.0](https://github.com/LavaGang/MelonLoader/releases/tag/v0.3.0)
  
- Download ReSkins.dll and place it in the mods folder
+ Download [ReSkins.dll](https://github.com/BustR75/AimLabSkinMod/releases/latest) and place it in the mods folder
  
 ## How to Create Skins
  First start a training session and select the weapon you want to change

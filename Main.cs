@@ -13,7 +13,7 @@ using UnityEngine.Bindings;
 using System.Drawing;
 
 [assembly:MelonGame("Statespace", "aimlab_tb")]
-[assembly:MelonInfo(typeof(ReSkins.Main),"Re:Skin","1.0","BustR75")]
+[assembly:MelonInfo(typeof(ReSkins.Main),"Re:Skins","1.0","BustR75", "https://github.com/BustR75/AimLabSkinMod")]
 [assembly:MelonColor(ConsoleColor.Red)]
 namespace ReSkins
 {

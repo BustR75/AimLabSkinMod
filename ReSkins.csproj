@@ -136,6 +136,7 @@
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
       <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
       <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.IMGUIModule.dll</HintPath>
@@ -155,6 +156,7 @@
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
       <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
