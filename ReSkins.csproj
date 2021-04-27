@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58900A9F-8058-4DF9-94B4-787E4D2D72F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReSkins</RootNamespace>
+    <AssemblyName>ReSkins</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AimLab.Localization">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\AimLab.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ColorPicker">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\ColorPicker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="constants">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\constants.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CsWorkshop">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\CsWorkshop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CS_Forms">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\CS_Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CS_FpsGame">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\CS_FpsGame.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CS_GameEngine">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\CS_GameEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CS_Models">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\CS_Models.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CS_Player">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\CS_Player.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CS_Utilities">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\CS_Utilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="GameTools">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\GameTools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\MelonLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PlayerSettings">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\PlayerSettings.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnhollowerRuntimeLib">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnhollowerRuntimeLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Il2CppAssetBundleManager">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.Il2CppAssetBundleManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Il2CppImageConversionManager">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="YoutubeExplode">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\YoutubeExplode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="YoutubePlayer">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\Aim Lab\MelonLoader\Managed\YoutubePlayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="Patches.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

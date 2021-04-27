@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSkins", "ReSkins.csproj", "{58900A9F-8058-4DF9-94B4-787E4D2D72F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58900A9F-8058-4DF9-94B4-787E4D2D72F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58900A9F-8058-4DF9-94B4-787E4D2D72F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58900A9F-8058-4DF9-94B4-787E4D2D72F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58900A9F-8058-4DF9-94B4-787E4D2D72F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1EA0C36-5DAA-4765-BC8D-D6FB8CBF9D76}
+	EndGlobalSection
+EndGlobal
