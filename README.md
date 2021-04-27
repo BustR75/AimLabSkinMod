@@ -23,7 +23,7 @@
  Edit them using any Photo editor you wish
  ### Types of textures
   - DiffuseMap = MainTexture.png
-  - MetallicGlossMap = MainTexture.png
+  - MetallicGlossMap = Metallic.png
   - NormalMap = Normal.png
   - ParallaxMap = Height.png
   - OcclusionMap = Occlusion.png
