@@ -90,6 +90,7 @@ namespace ReSkins
             }
             //yield break;
         }
+        static List<string> Directorys = new List<string>();
         public static List<WeaponSkin> Allskins = new List<WeaponSkin>();
         public static Dictionary<WeaponProfile, Il2CppSystem.Collections.Generic.IEnumerable<WeaponSkin>> ModSkins = new Dictionary<WeaponProfile, Il2CppSystem.Collections.Generic.IEnumerable<WeaponSkin>>();
         public static Il2CppSystem.Collections.Generic.IEnumerable<WeaponSkin> GetSkins(WeaponProfile weapon)
@@ -102,8 +103,9 @@ namespace ReSkins
                 IEnumerable<string> dirs = Directory.EnumerateDirectories(Path.Combine(Environment.CurrentDirectory, "Skins", weapon.displayName));
                 foreach (string d in dirs)
                 {
-                    if (File.Exists(Path.Combine(d, "MainTexture.png")))
+                    if (!Directorys.Contains(d) && File.Exists(Path.Combine(d, "MainTexture.png")))
                         skins.Add(FromImageDir(d,weapon));
+                    Directorys.Add(d);
                 }
                 Allskins.AddRange(skins.ToArray());
                 ModSkins.Add(weapon, skins.Cast<Il2CppSystem.Collections.Generic.IEnumerable<WeaponSkin>>());

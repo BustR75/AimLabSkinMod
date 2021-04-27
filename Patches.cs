@@ -48,10 +48,10 @@ namespace ReSkins
         {
             patches.Add(new patch(typeof(SkinSelector).GetMethod("OnWeaponChanged"),"", nameof(OnSetWeapon)));
             patches.Add(new patch(typeof(WeaponService).GetMethod("ValidateSkin"), nameof(ReturnTrue)));
-            patches.Add(new patch(typeof(WeaponSkinController).GetMethod("SetWeaponMaterial"), "", nameof(ReApplySkin)));
+            //patches.Add(new patch(typeof(WeaponSkinController).GetMethod("SetWeaponMaterial"), "", nameof(ReApplySkin)));
 
             Patch();
-        }
+        }/*
         private static void ReApplySkin(WeaponSkinController __instance)
         {
             if (Main.Allskins.Contains(WeaponService.Instance.currentSkin))
@@ -59,7 +59,7 @@ namespace ReSkins
                 {
                     r.material = WeaponService.Instance.currentSkin.material;
                 }
-        }
+        }*/
         private static bool ReturnTrue(ref bool __result)
         {
             __result = true;
