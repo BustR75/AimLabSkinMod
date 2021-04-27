@@ -1,5 +1,8 @@
 # AimLabSkinMod
  Replace the Textures on the Guns
+#Aim lab creaters if you want this down tell me and I'll do it
+ My steam is [BustR75](https://steamcommunity.com/id/BustR75/)
+ 
 ## Requirements
  It is required that you own the [Aim Lab -Elite Supporter Pack](https://store.steampowered.com/app/1122400/Aim_Lab_Elite_Supporter_Pack/)
  
