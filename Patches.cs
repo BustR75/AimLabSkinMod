@@ -46,32 +46,23 @@ namespace ReSkins
         static List<patch> patches = new List<patch>();
         public static void Start()
         {
-            patches.Add(new patch(typeof(SkinSelector).GetMethod("OnWeaponChanged"),"", nameof(OnSetWeapon)));
+            patches.Add(new patch(typeof(WeaponService).GetMethod("GetSkinForWeapon"), "", nameof(GetSkins)));
             patches.Add(new patch(typeof(WeaponService).GetMethod("ValidateSkin"), nameof(ReturnTrue)));
-            //patches.Add(new patch(typeof(WeaponSkinController).GetMethod("SetWeaponMaterial"), "", nameof(ReApplySkin)));
 
             Patch();
-        }/*
-        private static void ReApplySkin(WeaponSkinController __instance)
-        {
-            if (Main.Allskins.Contains(WeaponService.Instance.currentSkin))
-                foreach (UnityEngine.Renderer r in __instance.weaponParts)
-                {
-                    r.material = WeaponService.Instance.currentSkin.material;
-                }
-        }*/
+        }
         private static bool ReturnTrue(ref bool __result)
         {
             __result = true;
             return false;
         }
-        private static void OnSetWeapon(WeaponProfile weapon, WeaponSkin selectedSkin, Il2CppSystem.Collections.Generic.List<WeaponSkin> skins)
+        private static void GetSkins(Il2CppSystem.Collections.Generic.List<WeaponSkin> __result, WeaponProfile weapon)
         {
-            foreach(WeaponSkin skin in skins)
+            foreach (WeaponSkin skin in __result)
             {
-                    Main.Dump(skin,weapon);
+                Main.Dump(skin, weapon);
             }
-            skins.AddRange(Main.GetSkins(weapon));
+            __result.AddRange(Main.GetSkins(weapon));
         }
     }
 }
